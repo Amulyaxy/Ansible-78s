@@ -4,10 +4,10 @@
   tasks:
   - name: install ngnix
     ansible.builtin.dnf:
-    - name: ngnix
+      name: ngnix
       state: latest
   - name: run ngnix
     ansible.builtin.service:
-    - name: ngnix
+      name: ngnix
       state: started
       enabled: yes
