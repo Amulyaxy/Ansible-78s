@@ -1,0 +1,12 @@
+- name: Example of variables
+  hosts: localhost
+  vars:
+    greeting: "GoodMorning"
+    name: "Megha"
+
+  tasks:
+  - name: print declared variables
+    ansible.builtin.debug:
+      msg: "Hi, {{greeting}} {{name}}"
+
+
