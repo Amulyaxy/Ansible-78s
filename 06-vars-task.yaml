@@ -6,7 +6,7 @@
     Duration: "120hrs"
   tasks:
   - name: print override information
-    vars:
+    vars: #Task level variable, every time task level variables are 1st preference
       Course: "Devops"
     ansible.builtin.debug:
       msg: "Hi, we are learning {{Course}} from Trainer  {{Trainer}}, Duration is {{Duration}}." 
