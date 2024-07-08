@@ -1,7 +1,7 @@
 - name : data types
   hosts: localhost
   vars :
-  - name: Devops with AWS #string
+  - Course: Devops with AWS #string
     Tools: #List
       - Linux
       - shellscript
@@ -10,8 +10,6 @@
       Devops: 3
       AWS: 2
       Docker: 1
-    Course:
-      - Devops
     RealProject: true #boolean
   tasks:
   - name: print variables
