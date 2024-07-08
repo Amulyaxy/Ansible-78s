@@ -10,6 +10,8 @@
       Devops: 3
       AWS: 2
       Docker: 1
+    Course:
+      - Devops
     RealProject: true #boolean
   tasks:
   - name: print variables
