@@ -10,6 +10,7 @@
   vars:
     greeting: "Hello, GoodMorning"
     numbers: [1,2,3,4,5,6,4,3,2,1]
+    ages: [23,24,25,36,39]
   tasks:
   - name: convert into uppercase
     ansible.builtin.debug:
@@ -20,4 +21,7 @@
   - name: remove duplicates
     ansible.builtin.debug:
       msg: "{{numbers | unique}}"
+  - name: Print min and max ages
+    ansible.builtin.debug:
+      msg: "minimum age is : {{ages | min}} maximum age is: {{ages | max}}"
   
