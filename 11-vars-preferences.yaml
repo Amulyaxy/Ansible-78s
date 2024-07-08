@@ -1,7 +1,7 @@
 - name: variable preference
   hosts: localhost
-  vars:
-    WISHES: "Morning from PLAY variable"
+  # vars:
+  #   WISHES: "Morning from PLAY variable"
   vars_files:
   - vars.yaml
   # vars_prompt:
@@ -14,3 +14,11 @@
     #   WISHES: "Morning from TASK variable"
     ansible.builtin.debug:
       msg: "Hello, Good {{WISHES}}"
+
+
+  #arguments: alwayas first preference goes to arguments
+  #task: task level arguments
+  #variable file
+  #varables from prompt
+  #from play level 
+  # finally it goes to inventory
